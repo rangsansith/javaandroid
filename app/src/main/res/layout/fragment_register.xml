@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <!-- content -->
+<!-- Toolbar -->
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary" />
+
+     <!-- Content -->
     <LinearLayout
+        android:padding="16dp"
         android:layout_margin="50dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -62,19 +73,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <!-- Register -->
-        <TextView
-            android:id="@+id/TxtNewRegister"
-            android:clickable="true"
-            android:layout_marginTop="16sp"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@color/colorAccent"
-            android:textStyle="bold"
-            android:text="New Register"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
+      <!-- Tootbar -->
 
 
-</RelativeLayout>
+
+
+</LinearLayout>
